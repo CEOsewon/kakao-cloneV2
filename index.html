@@ -9,6 +9,7 @@
       src="https://kit.fontawesome.com/a3d426c7a6.js"
       crossorigin="anonymous"
     ></script>
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <header class="status-bar">
@@ -23,34 +24,52 @@
         </span>
       </div>
     </header>
-    <main class="header">
-      <div class="header__column">
-        <span class="header__name">채팅 </span>
-      </div>
-      <div class="header__column">
-        <span class="header__icon">
-          <i class="fas fa-search"></i>
-        </span>
-        <span class="header__icon">
-          <i class="far fa-comment"></i>
-        </span>
-        <span class="header__icon">
-          <i class="fas fa-music"></i>
-        </span>
-        <span class="header__icon">
-          <i class="fas fa-cog"></i>
-        </span>
-      </div>
+    <main class="index">
+      <header class="header">
+        <div class="header__column">
+          <span class="header__name">채팅 </span>
+        </div>
+        <div class="header__column">
+          <span class="header__icon">
+            <i class="fas fa-search"></i>
+          </span>
+          <span class="header__icon">
+            <i class="far fa-comment"></i>
+          </span>
+          <span class="header__icon">
+            <i class="fas fa-music"></i>
+          </span>
+          <span class="header__icon">
+            <i class="fas fa-cog"></i>
+          </span>
+        </div>
+      </header>
       <article class="chats">
         <a href="chat.html">
           <div class="chats__list">
             <div class="chats__column">
-              <img src="images/avatar.jpg" alt="" width="60px" height="60px" />
-              <span class="chat__author">세젤예주희</span>
-              <span class="chat__content">예쁘기만 하구만♥</span>
+              <img src="images/avatar.jpg" alt="" class="avatar" />
+              <div class="chats__chat">
+                <span class="chat__author">세젤예주희♥</span>
+                <span class="chat__content">사랑해♥</span>
+              </div>
             </div>
             <div class="chats__column">
               <span class="chats__time">22:12</span>
+            </div>
+          </div>
+        </a>
+        <a href="chat.html">
+          <div class="chats__list">
+            <div class="chats__column">
+              <img src="images/avatar.jpg" alt="" class="avatar" />
+              <div class="chats__chat">
+                <span class="chat__author">원</span>
+                <span class="chat__content">I will be a super rich</span>
+              </div>
+            </div>
+            <div class="chats__column">
+              <span class="chats__time">1월 10일</span>
             </div>
           </div>
         </a>
@@ -58,31 +77,33 @@
     </main>
     <nav class="nav">
       <div class="nav__bar">
-        <span class="nav__bar-icon">
+        <div class="nav__bar-icon">
           <a href="friend.html">
             <i class="far fa-user"></i>
           </a>
-        </span>
-        <span class="nav__bar-icon">
+        </div>
+        <div class="nav__bar-icon">
           <a href="index.html">
-            <i class="fas fa-comment"></i>
+            <i class="fas fa-comment">
+              <span class="alert">2</span>
+            </i>
           </a>
-        </span>
-        <span class="nav__bar-icon">
+        </div>
+        <div class="nav__bar-icon">
           <a href="hashtag.html">
             <i class="fas fa-hashtag"></i>
           </a>
-        </span>
-        <span class="nav__bar-icon">
+        </div>
+        <div class="nav__bar-icon">
           <a href="star.html">
             <i class="far fa-star"></i>
           </a>
-        </span>
-        <span class="nav__bar-icon">
+        </div>
+        <div class="nav__bar-icon">
           <a href="more.html">
             <i class="fas fa-ellipsis-h"></i>
           </a>
-        </span>
+        </div>
       </div>
     </nav>
   </body>
