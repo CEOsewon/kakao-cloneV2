@@ -25,51 +25,59 @@
         </span>
       </div>
     </header>
-    <main class="header">
-      <div class="header__column">
-        <span class="header__name">친구 </span>
-      </div>
-      <div class="header__column">
-        <span class="header__icon">
-          <i class="fas fa-search"></i>
-        </span>
-        <span class="header__icon">
-          <i class="fas fa-user-plus"></i>
-        </span>
-        <span class="header__icon">
-          <i class="fas fa-music"></i>
-        </span>
-        <span class="header__icon">
-          <i class="fas fa-cog"></i>
-        </span>
+    <main class="friends">
+      <div class="friends__header header">
+        <div class="header__column">
+          <span class="header__name">친구 </span>
+        </div>
+        <div class="header__column">
+          <span class="header__icon">
+            <i class="fas fa-search"></i>
+          </span>
+          <span class="header__icon">
+            <i class="fas fa-user-plus"></i>
+          </span>
+          <span class="header__icon">
+            <i class="fas fa-music"></i>
+          </span>
+          <span class="header__icon">
+            <i class="fas fa-cog"></i>
+          </span>
+        </div>
       </div>
       <article class="friends">
         <div class="friends__list">
-          <div class="friends__friend  friend-main">
-            <img src="images/avatar.jpg" alt="" width="60px" height="60px" />
+          <div class="friends__friend friend-main">
+            <img src="images/avatar-sewon.jpg" alt="" class="avatar--lg">
             <span class="friend__name">원</span>
           </div>
           <div class="friends__friend friend">
-            <span class="friend__title">
-              즐겨찾기
-            </span>
-            <div class="friend__column">
-              <img src="images/avatar.jpg" alt="" class="avatar">
-              <span class="friend__name">세젤예주희</span>
+            <div class="friend__fav">
+              <span class="friend__title">
+                즐겨찾기
+              </span>
+              <div class="friend__column">
+                <img src="images/avatar.jpg" alt="" class="avatar">
+                <span class="friend__name">세젤예주희</span>
+              </div>
+              <div class="friend__column"></div>
             </div>
-            <div class="friend__column"></div>
           </div>
           <div class="friends__friend friend">
             <span class="friend__title">
               추천친구
             </span>
+            <div class="friend__recommend recommend">
             <div class="friend__column">
-              <img src="images/avatar.jpg" alt="" class="avatar">
+              <img src="images/avatar-recommend.jpg" alt="" class="avatar">
               <span class="friend__name">새로운 친구를 만나보세요!</span>
             </div>
             <div class="friend__column">
-              <span class="friend__recommend">87></span>
+              <span class="recommend__friends">
+                87 >
+              </span>
             </div>
+          </div>
           </div>
           <div class="friends__friend friend">
             <span class="friend__title">
@@ -77,16 +85,18 @@
             </span>
             <div class="friend__column">
               <img src="images/avatar.jpg" alt="" class="avatar">
-              <span class="friend__name"">원</span>
-              <span class="friend__status">하이</span>
-            </div>
-          </div>
-          <div class="friends__friend friend">
-             <div class="friend__column">
-              <img src="images/avatar.jpg" alt="" class="avatar">
-              <span class="friend__name"">세젤예주희</span>
-              <span class="friend__status">하이요</span>
-            </div>
+              <div class="friend__list">
+                <span class="friend__name"">원</span>
+                <span class="friend__status">하이</span>
+              </div>
+            </div> 
+            <div class="friend__column">
+              <img src="images/avatar-sewon.jpg" alt="" class="avatar">
+              <div class="friend__list">
+                <span class="friend__name"">투</span>
+                <span class="friend__status">하위</span>
+              </div>
+            </div> 
           </div>
         </div>
       </article>

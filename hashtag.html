@@ -12,40 +12,56 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <header class="status-bar">
-      <div class="status-bar__column">
-        <span class="status-bar-timestamp">22:19</span>
-      </div>
-      <div class="status-bar__column">
-        <span class="status-bar-icon">
-          <i class="fas fa-signal"></i>
-          <i class="fas fa-wifi"></i>
-          <i class="fas fa-battery-three-quarters"></i>
-        </span>
+    <header class="status">
+      <div class="status-bar">
+        <div class="status-bar__column">
+          <span class="status-bar-timestamp">22:19</span>
+        </div>
+        <div class="status-bar__column">
+          <span class="status-bar-icon">
+            <i class="fas fa-signal"></i>
+            <i class="fas fa-wifi"></i>
+            <i class="fas fa-battery-three-quarters"></i>
+          </span>
+        </div>
       </div>
     </header>
-    <main class="header__nav">
-      <div class="header__nav-column">
-        <span class="header__nav-list">
-          뉴스
-        </span>
-        <span class="header__nav-list">
-          FUN
-        </span>
-        <span class="header__nav-list">
-          인기웹
-        </span>
-        <span class="header__nav-list">
-          연예
-        </span>
-        <span class="header__nav-list">
-          영화
-        </span>
-      </div>
-      <div class="header__nav-column">
-        <span class="header__nav-list">
-          <i class="fas fa-exchange-alt"></i>
-        </span>
+    <main class="hashtag">
+      <div class="hashtag__header header">
+        <div class="header__nav">
+          <ul class="header__nav-column">
+            <a href="hashtag.html">
+              <li class="header__nav-text">
+                뉴스
+              </li>
+            </a>
+            <a href="hashtag.html">
+              <li class="header__nav-text">
+                FUN
+              </li>
+            </a>
+            <a href="hashtag.html">
+              <li class="header__nav-text">
+                인기웹
+              </li>
+            </a>
+            <a href="hashtag.html">
+              <li class="header__nav-text">
+                연예
+              </li>
+            </a>
+            <a href="hashtag.html">
+              <li class="header__nav-text">
+                영화
+              </li>
+            </a>
+          </ul>
+          <div class="header__nav-column">
+            <span class="header__nav-exchange">
+              <i class="fas fa-exchange-alt"></i>
+            </span>
+          </div>
+        </div>
       </div>
       <article class="news">
         <div class="news__list">
@@ -78,8 +94,8 @@
               <i class="fas fa-search"></i>
             </span>
           </div>
-          <div class="search__hashtag hashtag">
-            <div class="hashtag__bubble">
+          <div class="search__sharp sharp">
+            <div class="sharp__bubble">
               <span class="hastag__name">
                 #이하이 긍정논의
               </span>
