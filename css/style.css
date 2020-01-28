@@ -3,6 +3,8 @@
 @import "index.css";
 @import "friend.css";
 @import "hashtag.css";
+@import "star.css";
+@import "more.css";
 
 * {
   box-sizing: border-box;

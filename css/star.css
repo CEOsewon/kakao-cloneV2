@@ -1,0 +1,37 @@
+.star .star__title {
+  padding: 15px 0px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.star__title h4 {
+  font-size: 12px;
+  font-weight: 700;
+  opacity: 0.8;
+}
+
+.star .star__list {
+  display: flex;
+  margin: 10px;
+}
+
+.star iframe {
+  margin-right: 10px;
+}
+
+.star .star__column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.star__column .video__content {
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.star__column .video__author {
+  font-size: 14px;
+  font-weight: 400;
+  opacity: 0.7;
+}
