@@ -1,0 +1,171 @@
+.chat-body,
+.chat-body header {
+  background-image: url(../images/bg-image.png);
+}
+
+.ch-header {
+  font-size: 20px;
+  position: fixed;
+  top: 60px;
+  left: 20px;
+  right: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.chat__header .ch-header__name {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.ch-header__column {
+  width: 55%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.ch-header__column-two i {
+  margin-left: 10px;
+}
+
+.incoming,
+.outcoming {
+  margin-bottom: 30px;
+}
+
+.incoming .avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 15px;
+  margin-right: 10px;
+}
+
+.incoming .incoming__column {
+  display: flex;
+}
+
+.incoming .incoming__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.incoming__text .incoming__author {
+  font-size: 12px;
+  opacity: 0.8;
+  margin-bottom: 10px;
+}
+
+.incoming__text .incoming__bubble,
+.outcoming .outcoming__content {
+  font-size: 14px;
+  font-weight: 700;
+  background-color: white;
+  padding: 10px 10px;
+  border-radius: 10px;
+  border-top-left-radius: 0px;
+}
+
+.outcoming {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.outcoming .outcoming__content {
+  background-color: #f1c40f;
+  padding: 10px 10px;
+  border-radius: 10px;
+  border-top-right-radius: 0px;
+}
+
+.write {
+  background-color: white;
+  position: fixed;
+  width: 100%;
+  height: 70px;
+  bottom: 0px;
+}
+
+.write .write__bar {
+  font-size: 24px;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.write i {
+  padding: 5px 10px;
+  opacity: 0.6;
+  font-size: 22px;
+}
+
+.write .write__bubble {
+  position: relative;
+  width: 90%;
+  height: 40px;
+  background-color: #f8f8f8;
+  border: 2px solid #e5e5e5;
+  border-radius: 20px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-left: 10px;
+}
+
+.write__bubble .bubble__content {
+  position: absolute;
+  background-color: inherit;
+  font-size: 18px;
+  left: 10px;
+  height: 30px;
+  width: 80%;
+  border: none;
+}
+
+.write input:focus {
+  outline: none;
+}
+
+@keyframes rotateIcon {
+  from {
+    transform: rotateY(0);
+  }
+  to {
+    transform: rotateY(1turn);
+  }
+}
+
+@keyframes incomingSlideIn {
+  from {
+    transform: translateX(-200px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes outcomingSlideIn {
+  from {
+    transform: translateX(200px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+.incoming .incoming__text {
+  animation: incomingSlideIn 1s ease;
+}
+
+.outcoming .outcoming__bubble {
+  animation: outcomingSlideIn 1s ease;
+}
+
+.incoming .avatar {
+  animation: rotateIcon 2s linear infinite;
+}

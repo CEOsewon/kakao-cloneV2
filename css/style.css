@@ -5,6 +5,7 @@
 @import "hashtag.css";
 @import "star.css";
 @import "more.css";
+@import "chatroom.css";
 
 * {
   box-sizing: border-box;
@@ -59,4 +60,39 @@ a {
   bottom: 0px;
   border-top: 1px solid #f0f0f0;
   z-index: 1;
+}
+
+@keyframes slideNav {
+  from {
+    transform: translateY(100px);
+  }
+  to {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes slideHeader {
+  from {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+.nav__bar {
+  animation: slideNav 1s ease;
+}
+
+.status-bar,
+.header {
+  animation: slideHeader 2.5s ease;
+}
+
+@media screen and (min-width: 550px) {
+  body {
+    display: none;
+  }
 }
